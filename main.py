@@ -180,7 +180,6 @@ def updateContent(id):
 @app.route("/search/<data_field>", methods=['GET'])
 def searchContent(data_field):
     try:
-        #data_field = request.args.get('field')
         string_search = request.args.get('string')
         con = openConn()
         cur = con.cursor()
