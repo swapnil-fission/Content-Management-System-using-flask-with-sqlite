@@ -1,0 +1,7 @@
+*__pycache__/
+Lib/
+Include/
+.git/
+Scripts/
+pyvenv.cfg
+sqlassignment.db
