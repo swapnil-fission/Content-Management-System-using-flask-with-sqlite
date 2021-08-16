@@ -44,7 +44,8 @@ Setup with sqlite Database
     1)user
     2)content
     
-       1)user schema
+   1)  user schema
+   
            CREATE TABLE IF NOT EXISTS user (
            userid INTEGER PRIMARY KEY AUTOINCREMENT, 
            email TEXT NOT NULL, 
@@ -57,7 +58,10 @@ Setup with sqlite Database
            country TEXT, 
            pincode TEXT NOT NULL
            )
-       2)content schema
+           
+           
+   2)  content schema
+   
            CREATE TABLE IF NOT EXISTS content(
            cid INTEGER PRIMARY KEY AUTOINCREMENT, 
            title TEXT NOT NULL, 
@@ -68,13 +72,17 @@ Setup with sqlite Database
            userid INTEGER,
            CONSTRAINT fk_user FOREIGN KEY (userid) REFERENCES user(userid)
            )
+           
+           
 ## Run below file
 
 For database and table creation 
---python db.py 
+
+    python db.py 
 
 For project run
---python main.py
+
+    python main.py
 
 
 # API's
